@@ -13,7 +13,7 @@ class ExceptionsTest {
 	@Test
 	public void testIndexOOBException() {
 		int[] vars = {0, 1, 2, 3};
-			
+		
 		try {
 			vars[0] = 4;
 			assertArrayEquals(vars, new int[] {4, 1, 2, 3});
