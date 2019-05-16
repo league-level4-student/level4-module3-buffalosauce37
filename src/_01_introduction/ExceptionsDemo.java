@@ -38,7 +38,7 @@ public class ExceptionsDemo {
 		// handle exceptions in unlimited ways.
 		try {
 			testMethod2(-1);
-		} catch (CustonException e) {
+		} catch (CustomException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			e.termanate();
@@ -53,9 +53,9 @@ public class ExceptionsDemo {
 
 	// 4. Create a static void method called testMethod2(int x) that throws
 	// a CustomException if x is negative.'
-	static void testMethod2(int x) throws CustonException {
+	static void testMethod2(int x) throws CustomException {
 		if (x < 0) {
-			throw new CustonException();
+			throw new CustomException();
 		}
 	}
 }

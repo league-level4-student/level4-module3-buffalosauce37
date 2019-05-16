@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 
-class ExceptionsTest {
+class ExceptionsTest extends ExceptionMethods{
 	ExceptionMethods em = new ExceptionMethods();
 	
 	//1. This is an example of how one might test that an exception is thrown.
 	//   It tests that an IndexOutOfBoundsException is thrown 
-	@Test
+	//@Test
 	public void testIndexOOBException() {
 		int[] vars = {0, 1, 2, 3};
 		
@@ -30,22 +30,23 @@ class ExceptionsTest {
 	//   should throw an IllegalArgumentException if the denominator is 0.0.
 	
 	//3. Complete the JUnit test method to test the divide method.
-	@Test
+	//@Test
 	public void testDivideByZeroException() {
-		
+		assertEquals(2.5, divide(5.0, 0.0), 0.1);
 	}
 	
 	//4. In the ExceptionMethods class, write a method called reverseString that takes a
-	//   String and returns the reverse of that String. It should throw an IllegalStateException
+	// String and returns the reverse of that String. It should throw an
+	// IllegalStateException
 	//   if the String passed in is empty
 	
 	//5. Complete the JUnit test method to test the reverseStringMethod.
 	@Test
 	public void testReverseString() {
-		
+		assertEquals("Bruh", reverseString(""));
 	}
 	
 	
-	
+
 
 }
